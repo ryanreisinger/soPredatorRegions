@@ -44,3 +44,7 @@ vignettes/*.pdf
 /plots_illustrator/
 /stuff/
 .Rproj.user
+
+# Ignore two large output files
+/dat_out/gridded_with_clusters.RDS
+/dat_out/gridded_with_clusters_quartile.RDS
