@@ -37,3 +37,9 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Ignore private input data, Illustrator files, manuscript files and miscellanea
+/dat_in/
+/manuscript_gitignore/
+/plots_illustrator/
+/stuff/
