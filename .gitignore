@@ -43,3 +43,4 @@ vignettes/*.pdf
 /manuscript_gitignore/
 /plots_illustrator/
 /stuff/
+.Rproj.user
