@@ -46,7 +46,7 @@ vignettes/*.pdf
 /stuff/
 /plots/
 
-# Ignore two large output files
+# Ignore large output files
 /dat_out/gridded_with_clusters.RDS
 /dat_out/gridded_with_clusters_quartile.RDS
 /dat_out/mds.RDS
