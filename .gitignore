@@ -38,13 +38,15 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# Ignore private input data, Illustrator files, manuscript files and miscellanea
+# Ignore private input data, plots, Illustrator files, manuscript files and miscellanea
 /dat_in/
 /manuscript_gitignore/
 /plots_illustrator/
 /stuff/
+/plots/
 .Rproj.user
 
 # Ignore two large output files
 /dat_out/gridded_with_clusters.RDS
 /dat_out/gridded_with_clusters_quartile.RDS
+/dat_out/mds.RDS
