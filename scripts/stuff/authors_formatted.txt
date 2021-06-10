@@ -1,4 +1,4 @@
-Ryan R. Reisinger1,2,3,4, Cassandra M. Brooks5, Ben Raymond6,7, Jennifer J. Freer8, Cédric Cotté4, José C. Xavier9,8, Phillip N. Trathan8, Horst Bornemann10, Jean-Benoit Charrassin4, Daniel P. Costa11, Bruno Danis12, Luis Hückstädt11,13, Ian D. Jonsen14, Mary-Anne Lea7, Leigh Torres15, Simon Wotherspoon7,6, Ari S. Friedlaender1, Yan Ropert-Coudert3, Mark Hindell7
+Ryan R. Reisinger1,2,3,4, Cassandra M. Brooks5, Ben Raymond6,7, Jennifer J. Freer8, Cédric Cotté4, José C. Xavier9,8, Phillip N. Trathan8, Horst Bornemann10, Jean-Benoit Charrassin4, Daniel P. Costa11, Bruno Danis12, Luis Hückstädt11,13, Ian D. Jonsen14, Mary-Anne Lea7, Leigh Torres15, Anton Van de Putte16,17, Simon Wotherspoon7,6, Ari S. Friedlaender1, Yan Ropert-Coudert3, Mark Hindell7
 1. Institute for Marine Sciences, University of California Santa Cruz, Santa Cruz California, United States
 2. CESAB-FRB, Institut Bouisson Bertrand, 5 rue de l'École de médecine, 34000 Montpellier, France
 3. Centre d’Etudes Biologiques de Chizé, UMR 7372 du CNRS-La Rochelle Université, Villiers-en-Bois, France
@@ -14,3 +14,5 @@ Ryan R. Reisinger1,2,3,4, Cassandra M. Brooks5, Ben Raymond6,7, Jennifer J. Free
 13. Department of Biology Marine Biology, University of  North Carolina Wilmington, Wilmington, North Carolina 28403, United States
 14. Department of Biological Sciences, Macquarie University, Sydney, Australia
 15. Department of Fisheries and Wildlife, Marine Mammal Institute, Oregon State University, Newport, Oregon, United States
+16. Royal Belgian Institute for Natural Science, B-1000, Brussels, Belgium
+17. Laboratory of Biodiversity and Evolutionary Genomics, KU Leuven, Leuven, Belgium
