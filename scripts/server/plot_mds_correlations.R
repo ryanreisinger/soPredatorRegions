@@ -2,7 +2,7 @@
 
 library(ggplot2)
 
-setwd("D:/RAATD/hotspot/")
+setwd("~/soPredatorRegions")
 
 dat <- read.csv("./dat_out/mds_envfit_results.csv",
                 stringsAsFactors = F)
@@ -29,7 +29,7 @@ dat$name <- c("Sea ice concentration",
               "Depth gradient",
               "Salinity difference")
 
-dat$cov_name <- paste(dat$name, " | ", dat$covariate)
+dat$cov_name <- paste(dat$name, " | ", dat$order)
 
 dat$covariate <- factor(dat$covariate, levels = rev(dat$covariate))
 dat$cov_name <- factor(dat$cov_name, levels = rev(dat$cov_name))

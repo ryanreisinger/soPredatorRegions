@@ -1,6 +1,6 @@
 ## Plot hotspots and MPAs together
 
-setwd("D:/RAATD/hotspot/")
+setwd("~/soPredatorRegions")
 
 library(sf)
 library(raster)
@@ -24,9 +24,11 @@ r <- rasterFromXYZ(dat[ , c("x", "y", "group")])
 crs(r) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
 
 ## Creat a colour palette
-k.hot <- length(which(grepl("hot_", unique(dat$group2))))
-k.cold <- length(which(grepl("cold_", unique(dat$group2))))
-pal <- c(sequential_hcl(k.cold, palette = "Light Grays"), glasbey(k.hot))
+# k.hot <- length(which(grepl("hot_", unique(dat$group2))))
+# k.cold <- length(which(grepl("cold_", unique(dat$group2))))
+# pal <- c(sequential_hcl(k.cold, palette = "Light Grays"), glasbey(k.hot))
+this_k <- length(unique(dat$group2))
+pal <- glasbey(this_k)
 
 # Create a table to store names and colours
 rat <- unique(dat[,c("group", "group2")])
@@ -39,23 +41,23 @@ r <- reclassify(r, rat[,c("group", "newgroup")])
 
 # Reorder palette
 # Right order
-ordered_clusters <- c("hot_13",
-                      "hot_15",
-                      "hot_16",
-                      "cold_14",
-                      "hot_17",
-                      "hot_09",
-                      "hot_10",
-                      "hot_03",
-                      "hot_08",
-                      "hot_04",
-                      "cold_01",
-                      "cold_02",
-                      "hot_05",
-                      "hot_06",
-                      "hot_07",
-                      "hot_11",
-                      "hot_12")
+ordered_clusters <- c("13",
+                      "15",
+                      "16",
+                      "14",
+                      "17",
+                      "09",
+                      "10",
+                      "03",
+                      "08",
+                      "04",
+                      "01",
+                      "02",
+                      "05",
+                      "06",
+                      "07",
+                      "11",
+                      "12")
 
 # Match
 dx <- vector(length = length(ordered_clusters))
@@ -63,23 +65,23 @@ for (i in 1:length(ordered_clusters)) {
    dx[i] <- which(rat$group2 == ordered_clusters[i])
 }
 
-full_cluster_names <- c("Antarctic hot_13",
-                        "Antarctic hot_15",
-                        "Antarctic hot_16",
-                        "Antarctic cold_14",
-                        "Antarctic hot_17",
-                        "Scoti Arc hot_09",
-                        "Scotia Arc hot_10",
-                        "Distant Subantarctic hot_03",
-                        "Distant Subantarctic hot_08",
-                        "Distant Subantarctic hot_04",
-                        "Distant Subantarctic cold_01",
-                        "Distant Subantarctic cold_02",
-                        "Subantarctic hot_05",
-                        "Subantarctic hot_06",
-                        "Subantarctic hot_07",
-                        "Subantarctic hot_11",
-                        "Subantarctic hot_12")
+full_cluster_names <- c("Antarctic 13",
+                        "Antarctic 15",
+                        "Antarctic 16",
+                        "Antarctic 14",
+                        "Antarctic 17",
+                        "Scoti Arc 09",
+                        "Scotia Arc 10",
+                        "Distant Subantarctic 03",
+                        "Distant Subantarctic 08",
+                        "Distant Subantarctic 04",
+                        "Distant Subantarctic 01",
+                        "Distant Subantarctic 02",
+                        "Subantarctic 05",
+                        "Subantarctic 06",
+                        "Subantarctic 07",
+                        "Subantarctic 11",
+                        "Subantarctic 12")
 
 # Need to reproject using nearest neighbour lookup, otherwise
 # integer values become numerical and color palette is messed up
