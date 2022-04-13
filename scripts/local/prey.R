@@ -26,7 +26,8 @@ k.cold <- length(unique(clu[clu$hotspot == "N", "group2"]))
 
 k.hot <- 14
 k.cold <- 3
-pal <- c(sequential_hcl(k.cold, palette = "Light Grays"), glasbey(k.hot))
+# pal <- c(sequential_hcl(k.cold, palette = "Light Grays"), glasbey(k.hot))
+pal <- glasbey(17)
 
 #--------------------------------------
 # Habitat importance function
@@ -59,10 +60,10 @@ ceph_species <- substr(ceph_species,1,nchar(ceph_species)-3) # Drop file extensi
 ceph_species <- paste0("CE_", ceph_species)
 
 # Replace species names with updated taxonomy from Cherel 2020.
-ceph_speces[ceph_species == "CE_moroteuthis_robsoni"] <- "CE_onykia_robsoni"
-ceph_speces[ceph_species == "CE_kondakovia_longimana"] <- "CE_moroteuthopsis_longimana"
-ceph_speces[ceph_species == "CE_moroteuthis_ingens"] <- "CE_moroteuthopsis_ingens"
-ceph_speces[ceph_species == "CE_loligo_gahi"] <- "CE_doryteuthis_gahi"
+ceph_species[ceph_species == "CE_moroteuthis_robsoni"] <- "CE_onykia_robsoni"
+ceph_species[ceph_species == "CE_kondakovia_longimana"] <- "CE_moroteuthopsis_longimana"
+ceph_species[ceph_species == "CE_moroteuthis_ingens"] <- "CE_moroteuthopsis_ingens"
+ceph_species[ceph_species == "CE_loligo_gahi"] <- "CE_doryteuthis_gahi"
 
 cephalopods <- stack()
 
@@ -317,7 +318,7 @@ datsum <- datsum[!is.na(datsum$group2), ]
 # Labels & ordering
 # Order of clusters for matching dendrogram
 dorder <- c(13, 15, 16, 14, 17, 9, 10, 3, 8, 4, 1, 2, 5, 6, 7, 11, 12)
-lbls <- unique(clu[, c("group", "group2")])
+lbls <- unique(clu[, "group2"])
 lbls <- lbls[complete.cases(lbls), ]
 lbls$order <- NA
 lbls[dorder, ]$order <- 1:17
