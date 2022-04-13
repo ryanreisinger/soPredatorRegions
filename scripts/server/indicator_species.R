@@ -1,4 +1,4 @@
-setwd("~/RAATD_01/RAATDhotspot")
+setwd("~/soPredatorRegions")
 
 library(indicspecies)
 library(vegan)

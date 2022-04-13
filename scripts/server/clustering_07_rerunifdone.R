@@ -225,7 +225,7 @@ crs(r) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
 # Create a table to store names and colours
 rat <- unique(dat[,c("group", "group2")])
 rat <- rat[!is.na(rat$group), ]
-rat <- rat[order(rat$group2), ]
+#rat <- rat[order(rat$group2), ]
 rat$pal <- pal
 rat$newgroup <- 1:nrow(rat)
 
@@ -396,7 +396,7 @@ theme_ryan <- function () {
 colrs <- c("#0077BB", "#EE7733", "#EE3377")
 
 # Add foraging classifications
-guilds <- read.csv("../cluster/guilds.csv", stringsAsFactors = F)
+guilds <- read.csv("./dat_in_public/guilds.csv", stringsAsFactors = F)
 
 datL <- merge(datL, guilds, by = "Species", all.x = T)
 

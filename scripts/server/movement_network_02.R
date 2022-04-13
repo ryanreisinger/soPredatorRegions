@@ -1,6 +1,6 @@
 # Network representation of animal movements
 
-setwd("/mnt/home/ryan/RAATD_01/RAATDhotspot")
+setwd("~/soPredatorRegions")
 
 library(raster)
 library(dplyr)

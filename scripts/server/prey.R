@@ -1,7 +1,7 @@
 # Prepare and extract prey layers
 
 #--------------------------------------
-setwd("~/RAATD_01/RAATDhotspot")
+setwd("~/soPredatorRegions")
 
 library(raster)
 library(ggplot2)
