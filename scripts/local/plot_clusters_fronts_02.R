@@ -152,6 +152,8 @@ for (i in 1:length(ordered_clusters)) {
    dx[i] <- which(rat$group2 == ordered_clusters[i])
 }
 
+#rat <- rat[c(13, 15, 16, 14, 17, 9, 10, 3, 8, 4, 1, 2, 5, 6, 7, 11, 12),]
+
 full_cluster_names <- c("Antarctic 13",
                         "Antarctic 15",
                         "Antarctic 16",
@@ -197,7 +199,7 @@ legend(x = 6000000,
        bty = "n",
        # legend = full_cluster_names,
        legend = ordered_clusters[1:5],
-       fill = rat$pal[1:5])
+       fill = rat$pal[dx][1:5])
 
 legend(x = 6000000,
        y = 1000000,
@@ -207,7 +209,7 @@ legend(x = 6000000,
        bty = "n",
        # legend = full_cluster_names,
        legend = ordered_clusters[6:7],
-       fill = rat$pal[6:7])
+       fill = rat$pal[dx][6:7])
 
 legend(x = 6000000,
        y = -500000,
@@ -269,7 +271,7 @@ dev.off()
 #--------------------------------
 # Hot and coldspots
 # Clusters
-tiff("plots/hotspot_map_fronts.tiff", height = 150/0.66666666666, width = 190/0.66666666666, units = "mm", res = 600)
+tiff("plots/hotspot_map_fronts.tiff", height = 70/0.66666666666, width = 100/0.66666666666, units = "mm", res = 600)
 
 SOmap(trim = -40,
       bathy_legend = FALSE,

@@ -5,7 +5,7 @@
 
 ## Ryan R Reisinger, Ben Raymond
 
-setwd("~/RAATD_01/RAATDhotspot")
+setwd("D:/soPredatorRegions")
 
 # Plotting
 library(ggplot2)
@@ -67,50 +67,50 @@ theme_ryan <- function () {
 colrs <- c("#0077BB", "#EE7733", "#EE3377")
 
 # Add foraging classifications
-guilds <- read.csv("./dat_in/guilds.csv", stringsAsFactors = F)
+guilds <- read.csv("./dat_in_public/guilds.csv", stringsAsFactors = F)
 datL <- merge(datL, guilds, by = "Species", all.x = T)
 
 # Add supercluster labels
 datL <- datL %>%
-  mutate(super_group = case_when(group2 == "hot_13" ~ "antarctic",
-                                 group2 == "hot_15" ~ "antarctic",
-                                 group2 == "hot_16" ~ "antarctic",
-                                 group2 == "cold_14" ~ "antarctic",
-                                 group2 == "hot_17" ~ "antarctic",
-                                 group2 == "hot_09" ~ "scotia_arc",
-                                 group2 == "hot_10" ~ "scotia_arc",
-                                 group2 == "hot_03" ~ "subantarctic_distant",
-                                 group2 == "hot_08" ~ "subantarctic_distant",
-                                 group2 == "hot_04" ~ "subantarctic_distant",
-                                 group2 == "cold_01" ~ "subantarctic_distant",
-                                 group2 == "cold_02" ~ "subantarctic_distant",
-                                 group2 == "hot_05" ~ "subantarctic",
-                                 group2 == "hot_06" ~ "subantarctic",
-                                 group2 == "hot_07" ~ "subantarctic",
-                                 group2 == "hot_11" ~ "subantarctic",
-                                 group2 == "hot_12" ~ "subantarctic"))
+  mutate(super_group = case_when(group2 == "13" ~ "antarctic",
+                                 group2 == "15" ~ "antarctic",
+                                 group2 == "16" ~ "antarctic",
+                                 group2 == "14" ~ "antarctic",
+                                 group2 == "17" ~ "antarctic",
+                                 group2 == "09" ~ "scotia_arc",
+                                 group2 == "10" ~ "scotia_arc",
+                                 group2 == "03" ~ "subantarctic_distant",
+                                 group2 == "08" ~ "subantarctic_distant",
+                                 group2 == "04" ~ "subantarctic_distant",
+                                 group2 == "01" ~ "subantarctic_distant",
+                                 group2 == "02" ~ "subantarctic_distant",
+                                 group2 == "05" ~ "subantarctic",
+                                 group2 == "06" ~ "subantarctic",
+                                 group2 == "07" ~ "subantarctic",
+                                 group2 == "11" ~ "subantarctic",
+                                 group2 == "12" ~ "subantarctic"))
 
 datL <- unite(data = datL, col = "super_group_cluster", c("super_group", "group2"), sep = "_", remove = FALSE)
 
 datL <- datL[!is.na(datL$group2), ]
 
-ordered_clusters <- c("antarctic_hot_13",
-                               "antarctic_hot_15",
-                               "antarctic_hot_16",
-                               "antarctic_cold_14",
-                               "antarctic_hot_17",
-                               "scotia_arc_hot_09",
-                               "scotia_arc_hot_10",
-                               "subantarctic_distant_hot_03",
-                               "subantarctic_distant_hot_08",
-                               "subantarctic_distant_hot_04",
-                               "subantarctic_distant_cold_01",
-                               "subantarctic_distant_cold_02",
-                               "subantarctic_hot_05",
-                               "subantarctic_hot_06",
-                               "subantarctic_hot_07",
-                               "subantarctic_hot_11",
-                               "subantarctic_hot_12")
+ordered_clusters <- c("antarctic_13",
+                               "antarctic_15",
+                               "antarctic_16",
+                               "antarctic_14",
+                               "antarctic_17",
+                               "scotia_arc_09",
+                               "scotia_arc_10",
+                               "subantarctic_distant_03",
+                               "subantarctic_distant_08",
+                               "subantarctic_distant_04",
+                               "subantarctic_distant_01",
+                               "subantarctic_distant_02",
+                               "subantarctic_05",
+                               "subantarctic_06",
+                               "subantarctic_07",
+                               "subantarctic_11",
+                               "subantarctic_12")
 
 plist <- list()
 

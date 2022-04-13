@@ -1,6 +1,6 @@
 ## Prepare World MPA Database
 
-setwd("D:/RAATD/hotspot/")
+setwd("D:/soPredatorRegions")
 
 library(sf)
 library(fasterize)
@@ -65,7 +65,8 @@ ccamlr <- st_read(".\\dat_in\\ccamlr_area\\asd-shapefile-EPSG102020\\asd-shapefi
 ccamlr <- st_union(ccamlr)
 
 # Maps
-tiff("plots/mpaMap.tiff", height = 6, width = 10, units = "in", res = 300)
+par(mai = c(0, 0, 0, 0), mar = c(0, 0, 0, 0))
+tiff("plots/mpaMap.tiff", height = 70/0.66666666666, width = 130/0.66666666666, units = "mm", res = 600)
 SOmap(trim = -40,
       bathy_legend = FALSE,
       border_col = c("white", "white"),
@@ -82,5 +83,6 @@ legend(x='right',
        legend = c("Designated\nmixed-use", "Designated\nno-take", "Proposed"),
        fill = c("#009988", "#0077BB", "#EE7733"),
        bty = "n",
+       inset = 0,
        y.intersp = 1.25)
 dev.off()
