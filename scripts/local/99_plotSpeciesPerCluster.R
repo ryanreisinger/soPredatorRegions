@@ -136,13 +136,10 @@ ggsave(file = "./plots/speciesCompositionClusters_quartile_02.pdf", arrangeGrob(
 
 
 # Heatplot of mean habitat importance for each species X cluster
-datsum <- group_by(datL, Species, group2)
+datsum <- group_by(datL, Species, super_group_cluster)
 datsum <- summarise_at(datsum, .vars = "Importance", .funs = mean)
 
-lbls <- data.frame("group2" = ordered_clusters,
-                   "order" = 1:17)
-datsum <- merge(x = datsum, y = lbls[, c("group2", "order")], by = "group2", all.x = T)
-datsum$group_order <- paste0(formatC(datsum$order, width=2, flag="0"), "_", datsum$group)
+datsum$super_group_cluster <- factor(datsum$super_group_cluster, levels = ordered_clusters)
 
 datsum$Species <- factor(datsum$Species, levels = c("ANFS",
                                                     "CRAS",
@@ -162,10 +159,9 @@ datsum$Species <- factor(datsum$Species, levels = c("ANFS",
                                                     "WHCP"))
 
 pdf("./plots/heatplotSpecies_quartile_02.pdf", width = 7, height = 6)
-ggplot(data = datsum, aes(x = group_order, y = Species, fill = Importance)) +
+ggplot(data = datsum, aes(x = super_group_cluster, y = Species, fill = Importance)) +
   geom_tile() +
   scale_fill_viridis_c(name = "Mean\nhabitat\nimportance") +
   labs(x = "Cluster", y = "Species") +
-  theme(axis.text.x = element_text(angle = 90)) +
-  scale_x_discrete(labels = lbls$group2)
+  theme(axis.text.x = element_text(angle = 90))
 dev.off()
