@@ -1,18 +1,18 @@
-Ryan R. Reisinger1,2,3,4, Cassandra M. Brooks5, Ben Raymond6,7, Jennifer J. Freer8, Cédric Cotté4, José C. Xavier9,8, Phillip N. Trathan8, Horst Bornemann10, Jean-Benoit Charrassin4, Daniel P. Costa11, Bruno Danis12, Luis Hückstädt11,13, Ian D. Jonsen14, Mary-Anne Lea7, Leigh Torres15, Anton Van de Putte16,17, Simon Wotherspoon7,6, Ari S. Friedlaender1, Yan Ropert-Coudert3, Mark Hindell7
-1. Institute for Marine Sciences, University of California Santa Cruz, Santa Cruz California, United States
-2. CESAB-FRB, Institut Bouisson Bertrand, 5 rue de l'École de médecine, 34000 Montpellier, France
-3. Centre d’Etudes Biologiques de Chizé, UMR 7372 du CNRS-La Rochelle Université, Villiers-en-Bois, France
-4. Sorbonne Universités, UPMC University, Paris 06, UMR 7159 CNRS-IRD-MNHN, LOCEAN-IPSL, 75005 Paris, France
-5. University of Colorado Boulder, Environmental Studies Program, Boulder, Colorado, United States
-6. Australian Antarctic Division, Department of Agriculture, Water and the Environment, 203 Channel Hwy, Kingston, TAS 7050, Australia
-7. Institute for Marine and Antarctic Studies, University of Tasmania, Hobart, Australia
-8. British Antarctic Survey, NERC, High Cross, Madingley Road, Cambridge, CB3 0ET, United Kingdom
-9. University of Coimbra, Marine and Environmental Sciences Centre, Department of Life Sciences, 3000-456 Coimbra, Portugal 
-10. Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung, Bremerhaven, Germany
-11. Institute of Marine Sciences, Department of Ecology and Evolutionary Biology, University of California Santa Cruz, Santa Cruz, California, United States
-12. Marine Biology Lab, Université Libre de Bruxelles, B-1050 Belgium
-13. Department of Biology Marine Biology, University of  North Carolina Wilmington, Wilmington, North Carolina 28403, United States
-14. Department of Biological Sciences, Macquarie University, Sydney, Australia
-15. Department of Fisheries and Wildlife, Marine Mammal Institute, Oregon State University, Newport, Oregon, United States
-16. Royal Belgian Institute for Natural Science, B-1000, Brussels, Belgium
-17. Laboratory of Biodiversity and Evolutionary Genomics, KU Leuven, Leuven, Belgium
+Ryan R. Reisinger1, Cassandra M. Brooks2, Ben Raymond3,4, Jennifer J. Freer5, Cédric Cotté6, José C. Xavier7,5, Phillip N. Trathan5, Horst Bornemann8, Jean-Benoit Charrassin6, Daniel P. Costa9, Bruno Danis10, Luis Hückstädt11, Ian D. Jonsen12, Mary-Anne Lea4, Leigh Torres13, Anton Van de Putte14,15, Simon Wotherspoon4,3, Ari S. Friedlaender16, Yan Ropert-Coudert17, Mark Hindell4
+1. School of Ocean and Earth Science, University of Southampton, National Oceanography Centre Southampton, European Way, Southampton SO14 3ZH, United Kingdom
+2. University of Colorado Boulder, Environmental Studies Program, Boulder, Colorado, United States
+3. Australian Antarctic Division, Department of Agriculture, Water and the Environment, 203 Channel Hwy, Kingston, TAS 7050, Australia
+4. Institute for Marine and Antarctic Studies, University of Tasmania, Hobart, Australia
+5. British Antarctic Survey, NERC, High Cross, Madingley Road, Cambridge, CB3 0ET, United Kingdom
+6. Sorbonne Universités, UPMC University, Paris 06, UMR 7159 CNRS-IRD-MNHN, LOCEAN-IPSL, 75005 Paris, France
+7. University of Coimbra, Marine and Environmental Sciences Centre, Department of Life Sciences, 3000-456 Coimbra, Portugal 
+8. Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung, Bremerhaven, Germany
+9. Institute of Marine Sciences, Department of Ecology and Evolutionary Biology, University of California Santa Cruz, Santa Cruz, California, United States
+10. Marine Biology Lab, Université Libre de Bruxelles, B-1050 Belgium
+11. Centre for Ecology and Conservation, University of Exeter, Penryn, Cornwall, United Kingdom
+12. Department of Biological Sciences, Macquarie University, Sydney, Australia
+13. Department of Fisheries and Wildlife, Marine Mammal Institute, Oregon State University, Newport, Oregon, United States
+14. Royal Belgian Institute for Natural Science, B-1000, Brussels, Belgium
+15. Laboratory of Biodiversity and Evolutionary Genomics, KU Leuven, Leuven, Belgium
+16. Institute for Marine Sciences, University of California Santa Cruz, Santa Cruz California, United States
+17. Centre d’Etudes Biologiques de Chizé, UMR 7372 du CNRS-La Rochelle Université, Villiers-en-Bois, France
